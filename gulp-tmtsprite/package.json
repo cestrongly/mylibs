@@ -1,0 +1,126 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "gulp-tmtsprite@^0.0.22",
+        "scope": null,
+        "escapedName": "gulp-tmtsprite",
+        "name": "gulp-tmtsprite",
+        "rawSpec": "^0.0.22",
+        "spec": ">=0.0.22 <0.0.23",
+        "type": "range"
+      },
+      "E:\\chenhui\\git_repositories\\tmt-workflow"
+    ]
+  ],
+  "_cnpm_publish_time": 1466955915189,
+  "_from": "gulp-tmtsprite@>=0.0.22 <0.0.23",
+  "_hasShrinkwrap": false,
+  "_id": "gulp-tmtsprite@0.0.22",
+  "_inCache": true,
+  "_location": "/gulp-tmtsprite",
+  "_nodeVersion": "5.10.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/gulp-tmtsprite-0.0.22.tgz_1466955914664_0.4043463736306876"
+  },
+  "_npmUser": {
+    "name": "littledu",
+    "email": "410491325@qq.com"
+  },
+  "_npmVersion": "3.8.3",
+  "_phantomChildren": {
+    "lodash": "4.17.10"
+  },
+  "_requested": {
+    "raw": "gulp-tmtsprite@^0.0.22",
+    "scope": null,
+    "escapedName": "gulp-tmtsprite",
+    "name": "gulp-tmtsprite",
+    "rawSpec": "^0.0.22",
+    "spec": ">=0.0.22 <0.0.23",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/gulp-tmtsprite/download/gulp-tmtsprite-0.0.22.tgz",
+  "_shasum": "c1f3bfee7f71547df6cbc3709590876510b157cc",
+  "_shrinkwrap": null,
+  "_spec": "gulp-tmtsprite@^0.0.22",
+  "_where": "E:\\chenhui\\git_repositories\\tmt-workflow",
+  "author": {
+    "name": "Willerce Zenn",
+    "email": "willerce@gmail.com",
+    "url": "http://willerce.com"
+  },
+  "bugs": {
+    "url": "https://github.com/weixin/gulp-tmtsprite/issues"
+  },
+  "dependencies": {
+    "async": "^2.0.0-rc.6",
+    "color": "^0.11.3",
+    "imageinfo": "^1.0.4",
+    "layout": "~2.2.0",
+    "lodash": "^4.13.1",
+    "node-lwip": "^0.2.1",
+    "through2": "^2.0.1",
+    "vinyl": "^1.1.1"
+  },
+  "description": "CSS Sprite Generator",
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.7",
+    "mocha": "^2.1.0",
+    "mocha-lcov-reporter": "^0.0.2",
+    "should": "^5.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "c1f3bfee7f71547df6cbc3709590876510b157cc",
+    "size": 4909,
+    "noattachment": false,
+    "tarball": "http://r.cnpmjs.org/gulp-tmtsprite/download/gulp-tmtsprite-0.0.22.tgz"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "gitHead": "055309255456a8d2e07e09ae01de4295d9337b2b",
+  "homepage": "https://github.com/weixin/gulp-tmtsprite",
+  "keywords": [
+    "sprites",
+    "sprite",
+    "coordinates",
+    "css",
+    "gulpfriendly",
+    "gruntplugin"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "maintainers": [
+    {
+      "name": "littledu",
+      "email": "410491325@qq.com"
+    },
+    {
+      "name": "willerce",
+      "email": "willerce@gmail.com"
+    }
+  ],
+  "name": "gulp-tmtsprite",
+  "optionalDependencies": {},
+  "publish_time": 1466955915189,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weixin/gulp-tmtsprite.git"
+  },
+  "scripts": {
+    "coverage": "istanbul cover _mocha --report html -- -R spec",
+    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "hint": "jshint lib/**/*.js index.js",
+    "style": "jscs test/*.js lib/**/*.js index.js",
+    "test": "mocha --reporter spec"
+  },
+  "version": "0.0.22"
+}

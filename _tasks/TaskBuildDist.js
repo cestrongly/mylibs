@@ -161,9 +161,9 @@ module.exports = function (gulp, config) {
     //图片压缩
     function imageminImg() {
         return gulp.src(paths.src.img)
-            .pipe(imagemin({
-                use: [pngquant()]
-            }))
+            // .pipe(imagemin({
+            //     use: [pngquant()]
+            // }))
             .pipe(gulp.dest(paths.tmp.img));
     }
 
@@ -191,9 +191,9 @@ module.exports = function (gulp, config) {
     //雪碧图压缩
     function imageminSprite() {
         return gulp.src('./tmp/sprite/**/*')
-            .pipe(imagemin({
-                use: [pngquant()]
-            }))
+            // .pipe(imagemin({
+            //     use: [pngquant()]
+            // }))
             .pipe(gulp.dest(paths.tmp.sprite));
     }
 
@@ -424,10 +424,10 @@ module.exports = function (gulp, config) {
         ),
         compileAutoprefixer,
         imageminSprite,
-        miniCSS,
+        //miniCSS,
         compileHtml,
         svgSymbols,
-        reversion,
+        //reversion,
         supportWebp(),
         delSVG,
         findChanged,

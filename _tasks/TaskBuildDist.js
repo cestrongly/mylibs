@@ -186,7 +186,7 @@ module.exports = function(gulp, config) {
                     presets: ['es2015', 'stage-2']
                 })
             ))
-            .pipe(uglify())
+            //.pipe(uglify())
             .pipe(gulp.dest(paths.tmp.js));
     }
 

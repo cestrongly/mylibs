@@ -1,0 +1,28 @@
+/**
+ * @name: mod-weixin-footer-nav-base
+ * @description: 微信底部自定义菜单 基础样式
+ * @author: cest
+ */
+
+ * {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+li,
+dl {
+    list-style-type: none;
+}
+
+a:link,
+a:visited {
+    color: #575757;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.35);
+}

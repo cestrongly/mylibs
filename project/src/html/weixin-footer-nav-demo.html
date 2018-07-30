@@ -11,30 +11,10 @@
     <%-css("style-weixin-footer-nav-demo.css")%>
 </head>
 <body>
-<footer class="mod-weixin-footer-nav">
-    <nav>
-        <ul id="mod-weixin-footer-nav__items" class="mod-weixin-footer-nav__items">
-            <%for(var i = 0; i < local.footer_navs.length; i++) {%>
-            <li>
-                <a href="<%=local.footer_navs[i].link_href%>"><span><%=local.footer_navs[i].link_text%></span></a>
-                <%var sub_navs = local.footer_navs[i].sub_navs %>
-                <%if(!!sub_navs){%>
-                    <%if(sub_navs.length > 0){%>
-                <dl>
-                    <%for (var j = 0; j < sub_navs.length; j++){%>
-                    <dd><a href="<%=sub_navs[j].link_href%>"><span><%=sub_navs[j].link_text%></span></a></dd>
-                    <%}%>
-                </dl>
-                    <%}%>
-                <%}%>        
-            </li>
-            <%}%>
-        </ul>
-    </nav>
-    <div id="mod-weixin-footer-nav__masklayer" class="mod-weixin-footer-nav__masklayer">&nbsp;</div>
-    <div class="bg"><img src="/img/mod-weixin-footer-nav/home-default17.jpg" width="100%" height="100%"></div>
-</footer>
-<%-js("weixin-footer-nav-demo.js")%>
+<% include _block/weixin-footer-nav %>
+<!-- build:js ../js/weixin-footer-nav-demo.js --> -->
+<%-js("weixin-footer-nav.js")%>
+<!-- endbuild -->
 <script>
      FooterNav.bindClick(document.getElementById("mod-weixin-footer-nav__items").querySelectorAll("li>a"), document.getElementById("mod-weixin-footer-nav__masklayer"));
 </script>

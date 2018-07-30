@@ -102,16 +102,17 @@
             <div class="mod-sticker__list-border">
                 <div>合并SYMBOL   <button id="svgToggleColor" class="mod-example__svg-button">换色</button>需求</div>
                 <div class="mod-header__desc">在src中链接的最后加?s</div>
-                <img id="svg5" class="mod-example__svg-red" src="../svg/svgicon/4g.svg?s" alt="">
+                <%for(var i = 0; i < local.mod_sticker.length; i++) {%>
+                    <img id="svg5" class="mod-example__svg-red" src="<%=local.mod_sticker[i].img_src%>?s" alt="">
+                <%}%>    
+                <!-- <img id="svg5" class="mod-example__svg-red" src="../svg/svgicon/4g.svg?s" alt="">
                 <img id="svg6" class="mod-example__svg-red" src="../svg/svgicon/12w.svg?s" alt="">
                 <img id="svg7" class="mod-example__svg-red" src="../svg/svgicon/bl.svg?s" alt="">
-                <img id="svg8" class="mod-example__svg-red" src="../svg/svgicon/ss.svg?s" alt="">
+                <img id="svg8" class="mod-example__svg-red" src="../svg/svgicon/ss.svg?s" alt=""> -->
             </div>
         </div>
     </div>
 </div>
-
-
 
 <div class="mod-footer">
     <!--以下为 EJS 模板语言使用范例-->

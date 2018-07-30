@@ -73,5 +73,8 @@
     "url": "https://github.com/weixin/tmt-workflow"
   },
   "homepage": "https://github.com/weixin/tmt-workflow",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "gulp-data": "^1.3.1"
+  }
 }

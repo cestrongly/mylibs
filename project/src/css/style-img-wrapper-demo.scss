@@ -1,0 +1,30 @@
+@import "mod-img-wrapper";
+/**
+ * @name: 示例样式
+ * @description: 以下样式与模块无关
+ * @author: cest
+ */
+
+body,
+ul,
+li {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.example-list {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    .item {
+        width: 33%;
+    }
+    .item__wrapper {
+        margin: 5px;
+    }
+}

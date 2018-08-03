@@ -1,0 +1,7 @@
+{
+    "mod_img_wrapper": {
+        "tag_name": "div",
+        "img_src": "../svg/svgicon/4g.svg",
+        "img_text": "img text"
+    }
+}

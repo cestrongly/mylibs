@@ -1,0 +1,22 @@
+{
+    "page_title": "图片容器",
+    "mod_img_wrapper_list": [
+        {
+            "tag_name": "div",
+            "img_src": "https://cestrongly.github.io/mycdns/images/0001.jpg",
+            "img_text": "img text"
+        },
+        {
+            "tag_name": "div",
+            "img_src": "https://cestrongly.github.io/mycdns/images/0002.jpg",
+            "img_text": "img text"
+        },
+        {
+            "tag_name": "div",
+            "img_src": "https://cestrongly.github.io/mycdns/images/0003.jpg",
+            "img_text": "img text"
+        }
+
+    ]
+    
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" data-rem="375">
+<head>
+    <meta charset="UTF-8">
+    <title><%=local.page_title%></title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="format-detection" content="telephone=no">
+    <%- css("style-img-wrapper-demo.css")%>
+</head>
+<body>
+    <ul class="example-list">
+    <% local.mod_img_wrapper_list.forEach(function(item,index){
+        var mod_img_wrapper = item;
+    %>
+        <li class="item">
+            <div class="item__wrapper">
+                <% include _block/mod-img-wrapper %>
+            </div>
+        </li>
+    <%}) %>
+    </ul>
+
+</body>
+</html>

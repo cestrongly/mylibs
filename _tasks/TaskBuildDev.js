@@ -11,6 +11,7 @@ var lazyImageCSS = require('gulp-lazyimagecss');  // 自动为图片样式添加
 var postcss = require('gulp-postcss');   // CSS 预处理
 var posthtml = require('gulp-posthtml');  // HTML 预处理
 var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 var webpack = require('webpack-stream');
 var babel = require('gulp-babel');
 var parseSVG = require('./common/parseSVG');
@@ -115,7 +116,9 @@ module.exports = function (gulp, config) {
     //编译 sass
     function compileSass() {
         return gulp.src(paths.src.sass)
+        .pipe(sourcemaps.init())
             .pipe(sass())
+            .pipe(sourcemaps.write())
             .on('error', sass.logError)
             .pipe(lazyImageCSS({ SVGGracefulDegradation: false, imagePath: lazyDir }))
             .pipe(gulp.dest(paths.dev.css))

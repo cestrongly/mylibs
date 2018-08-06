@@ -35,6 +35,7 @@ var paths = {
         img: './src/img/**/*.{JPG,jpg,png,gif,svg}',
         slice: './src/slice/**/*.png',
         js: './src/js/**/*.js',
+        lib: './src/lib/**/*.*',
         media: './src/media/**/*',
         less: './src/css/style-*.less',
         lessAll: './src/css/**/*.less',
@@ -63,8 +64,9 @@ module.exports = function (gulp, config) {
 
     // 复制操作
     var copyHandler = function (type, file) {
+        console.log(type,file);
         file = file || paths['src'][type];
-
+        
         return gulp.src(file, { base: paths.src.dir })
             .pipe(gulp.dest(paths.dev.dir))
             .on('end', reloadHandler);
@@ -83,6 +85,10 @@ module.exports = function (gulp, config) {
     //复制操作 start
     function copyImg() {
         return copyHandler('img');
+    }
+
+    function copyLib() {
+        return copyHandler('lib');
     }
 
     function copySlice() {
@@ -356,6 +362,7 @@ module.exports = function (gulp, config) {
             compileJs,
             copySvg,
             // copyJs,
+            copyLib,
             copyMedia,
             compileLess,
             compileSass

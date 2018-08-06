@@ -1,0 +1,47 @@
+/*=================================================================
+	Basic Setup
+==================================================================*/
+
+body {
+    background-color: #2B2C30;
+	font-family: 'Ubuntu', 'Arial', sans-serif;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+a {
+    color: #fff;
+	
+	-webkit-transition: all .3s ease-in 0s;
+	   -moz-transition: all .3s ease-in 0s;
+		 -o-transition: all .3s ease-in 0s;
+			transition: all .3s ease-in 0s;
+}
+
+iframe {
+    border: 0;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:focus, a:hover {
+    color: #6CB670;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: oswald;
+    font-weight: 400;
+}

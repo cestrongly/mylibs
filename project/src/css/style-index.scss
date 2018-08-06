@@ -16,10 +16,11 @@
     filter: alpha(opacity=100);
     text-align: center;
     .loading-img {
-        height: 100%;
-        left: 0;
         position: fixed;
-        top: 50%;
+        left: 0;
         width: 100%;
+        top: 50%;
+        //height: 100%;
+        margin-top: -50px;
     }
 }

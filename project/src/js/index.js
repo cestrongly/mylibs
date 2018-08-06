@@ -1,5 +1,10 @@
-// js here
-let name = 'ES2015';
-let output = `${name} test`;
+$(()=>{
 
-console.log(output);
+    /* ========================================================================= */
+	/*	Page Preloader
+    /* ========================================================================= */
+    
+    window.onload = ()=>{
+        document.getElementById('loading-mask').style.display = 'none';
+    }
+});

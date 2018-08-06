@@ -1,0 +1,25 @@
+/**
+ * @name: 模板网站
+ * @description: 模板网站
+ * @author: cest
+ */
+
+#loading-mask {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: 99999999;
+    background-color: #333439;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    text-align: center;
+    .loading-img {
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 50%;
+        width: 100%;
+    }
+}

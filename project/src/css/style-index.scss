@@ -20,8 +20,98 @@
         position: fixed;
         left: 0;
         width: 100%;
-        top: 50%;
-        //height: 100%;
+        top: 50%; //height: 100%;
         margin-top: -50px;
+    }
+}
+
+#navigation {
+    margin-bottom: 0;
+    padding: 18px;
+    background-color: #fff;
+    .navbar-brand {
+        margin-top: -20px;
+    }
+    .navbar-nav {
+        &>li>a {
+            color: #555;
+            font-size: 24px;
+        }
+        &>.current>a {
+            color: #fd2a00;
+        }
+    }
+}
+
+#logo {
+    margin: 0;
+    &>img {
+        height: 66px;
+    }
+}
+
+.banner {
+    &>ul>li {
+        min-height: 680px;
+        background-image: url(/img/index/banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.mod-title__wrapper {
+    margin: 60px 0 10px 0;
+    .mod-title {
+        margin: 0;
+        color: #fd2a00;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: .1em;
+        &>span {
+            display: block;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+#services, {
+    overflow: hidden;
+    background-color: #fff;
+    .row {
+        margin: 15px 50px;
+    }
+    .img__wrapper {
+        position: relative;
+        margin: 20px auto;
+        width: 66%;
+        &::before {
+            content: "\20";
+            display: block;
+            width: 100%;
+            height: 0;
+            padding-top: 100%;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .text__wrapper {
+        width: 66%;
+        margin: 0 auto;
+    }
+}
+
+#our-team {
+    overflow: hidden;
+    background-color: #1a1f2a;
+    color: #fff;
+    .row {
+        margin: 15px 50px;
     }
 }

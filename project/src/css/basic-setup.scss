@@ -2,8 +2,8 @@
 	Basic Setup
 ==================================================================*/
 
-
-ol, ul {
+ol,
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -15,27 +15,33 @@ figure {
 
 a {
     color: #fff;
-	
-	-webkit-transition: all .3s ease-in 0s;
-	   -moz-transition: all .3s ease-in 0s;
-		 -o-transition: all .3s ease-in 0s;
-			transition: all .3s ease-in 0s;
+    -webkit-transition: all .3s ease-in 0s;
+    -moz-transition: all .3s ease-in 0s;
+    -o-transition: all .3s ease-in 0s;
+    transition: all .3s ease-in 0s;
 }
 
 iframe {
     border: 0;
 }
 
-a, a:focus, a:hover {
+a,
+a:focus,
+a:hover {
     text-decoration: none;
     outline: 0;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
     color: #6CB670;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: oswald;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 400;
 }

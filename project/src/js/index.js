@@ -4,9 +4,9 @@ $(() => {
     /*	Page Preloader
     /* ========================================================================= */
 
-    window.onload = () => {
-        document.getElementById('loading-mask').style.display = 'none';
-    }
+    // window.onload = () => {
+    //     document.getElementById('loading-mask').style.display = 'none';
+    // }
 
 
     /* ========================================================================= */

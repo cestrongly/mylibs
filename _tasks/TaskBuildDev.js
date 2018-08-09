@@ -6,10 +6,10 @@ var less = require('gulp-less');
 var util = require('./lib/util');
 var gulpif = require('gulp-if');
 var ejshelper = require('tmt-ejs-helper');
-var bs = require('browser-sync').create();  // 自动刷新浏览器
-var lazyImageCSS = require('gulp-lazyimagecss');  // 自动为图片样式添加 宽/高/background-size 属性
-var postcss = require('gulp-postcss');   // CSS 预处理
-var posthtml = require('gulp-posthtml');  // HTML 预处理
+var bs = require('browser-sync').create(); // 自动刷新浏览器
+var lazyImageCSS = require('gulp-lazyimagecss'); // 自动为图片样式添加 宽/高/background-size 属性
+var postcss = require('gulp-postcss'); // CSS 预处理
+var posthtml = require('gulp-posthtml'); // HTML 预处理
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var webpack = require('webpack-stream');
@@ -58,22 +58,22 @@ var paths = {
 };
 
 
-module.exports = function (gulp, config) {
+module.exports = function(gulp, config) {
 
     var lazyDir = config.lazyDir || ['../slice', '../svg'];
 
     // 复制操作
-    var copyHandler = function (type, file) {
-        console.log(type,file);
+    var copyHandler = function(type, file) {
+        console.log(type, file);
         file = file || paths['src'][type];
-        
+
         return gulp.src(file, { base: paths.src.dir })
             .pipe(gulp.dest(paths.dev.dir))
             .on('end', reloadHandler);
     };
 
     // 自动刷新
-    var reloadHandler = function () {
+    var reloadHandler = function() {
         config.livereload && bs.reload();
     };
 
@@ -109,34 +109,32 @@ module.exports = function (gulp, config) {
     function compileLess() {
         return gulp.src(paths.src.less)
             .pipe(less({ relativeUrls: true }))
-            .on('error', function (error) {
+            .on('error', function(error) {
                 console.log(error.message);
             })
             .pipe(lazyImageCSS({ SVGGracefulDegradation: false, imagePath: lazyDir }))
             .pipe(gulp.dest(paths.dev.css))
-            .on('data', function () {
-            })
+            .on('data', function() {})
             .on('end', reloadHandler)
     }
 
     //编译 sass
     function compileSass() {
         return gulp.src(paths.src.sass)
-        .pipe(sourcemaps.init())
+            .pipe(sourcemaps.init())
             .pipe(sass())
             .pipe(sourcemaps.write())
             .on('error', sass.logError)
             .pipe(lazyImageCSS({ SVGGracefulDegradation: false, imagePath: lazyDir }))
             .pipe(gulp.dest(paths.dev.css))
-            .on('data', function () {
-            })
+            .on('data', function() {})
             .on('end', reloadHandler)
     }
 
     //编译 html
     function compileHtml() {
         return gulp.src(paths.src.html)
-            .pipe(data(function (file) {
+            .pipe(data(function(file) {
                 var filePath = file.path;
                 // global.json 全局数据，页面中直接通过属性名调用
                 return Object.assign(JSON.parse(fs.readFileSync(paths.src.globalData)), {
@@ -144,13 +142,12 @@ module.exports = function (gulp, config) {
                     local: JSON.parse(fs.readFileSync(path.join(path.dirname(filePath), path.basename(filePath, '.html') + '.json')))
                 })
             }))
-            .pipe(ejs(ejshelper()).on('error', function (error) {
+            .pipe(ejs(ejshelper()).on('error', function(error) {
                 console.log(error.message);
             }))
             .pipe(parseSVG({ devPath: 'dev' }))
             .pipe(gulp.dest(paths.dev.html))
-            .on('data', function () {
-            })
+            .on('data', function() {})
             .on('end', reloadHandler)
     }
 
@@ -177,7 +174,7 @@ module.exports = function (gulp, config) {
             port: config['livereload']['port'] || 8080,
             startPath: config['livereload']['startPath'] || '/html',
             reloadDelay: 0,
-            notify: {      //自定制livereload 提醒条
+            notify: { //自定制livereload 提醒条
                 styles: [
                     "margin: 0",
                     "padding: 5px",
@@ -196,7 +193,7 @@ module.exports = function (gulp, config) {
         });
     }
 
-    var watchHandler = function (type, file) {
+    var watchHandler = function(type, file) {
         var target = file.match(/^src[\/|\\](.*?)[\/|\\]/)[1];
 
         switch (target) {
@@ -218,9 +215,9 @@ module.exports = function (gulp, config) {
                     copyHandler('svg', file);
                     compileLess();
                     compileHtml();
-                    setTimeout(function () {
+                    setTimeout(function() {
                         svgSymbols();
-                        setTimeout(function () {
+                        setTimeout(function() {
                             reloadHandler();
                         }, 300)
                     }, 300)
@@ -274,7 +271,7 @@ module.exports = function (gulp, config) {
             case 'html':
                 if (type === 'removed') {
                     var tmp = file.replace('src', 'dev');
-                    del([tmp]).then(function () {
+                    del([tmp]).then(function() {
                         util.loadPlugin('build_dev');
                     });
                 } else {
@@ -282,7 +279,7 @@ module.exports = function (gulp, config) {
                 }
 
                 if (type === 'add') {
-                    setTimeout(function () {
+                    setTimeout(function() {
                         util.loadPlugin('build_dev');
                     }, 500);
                 }
@@ -301,14 +298,14 @@ module.exports = function (gulp, config) {
                 },
                 shape: {
                     id: {
-                        generator: function (id) {
+                        generator: function(id) {
                             var ids = id.replace(/.svg/ig, '');
                             return ids;
                         }
                     }
                 }
             }))
-            .pipe(rename(function (path) {
+            .pipe(rename(function(path) {
                 path.dirname = './';
                 path.basename = 'symbol';
             }))
@@ -326,20 +323,18 @@ module.exports = function (gulp, config) {
             paths.src.lessAll,
             paths.src.sassAll,
             paths.src.htmlAll
-        ],
-            { ignored: /[\/\\]\./ }
-        );
+        ], { ignored: /[\/\\]\./ });
 
         watcher
-            .on('change', function (file) {
+            .on('change', function(file) {
                 util.log(file + ' has been changed');
                 watchHandler('changed', file);
             })
-            .on('add', function (file) {
+            .on('add', function(file) {
                 util.log(file + ' has been added');
                 watchHandler('add', file);
             })
-            .on('unlink', function (file) {
+            .on('unlink', function(file) {
                 util.log(file + ' is deleted');
                 watchHandler('removed', file);
             });

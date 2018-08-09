@@ -39,11 +39,11 @@
 	Start Preloader
     ==================================== -->
 
-    <div id="loading-mask">
+    <!-- <div id="loading-mask">
         <div class="loading-img">
             <img src="/img/index/preloader.gif" alt="页面预加载">
         </div>
-    </div>
+    </div> -->
 
     <!--
     End Preloader
@@ -235,7 +235,7 @@
         <div class="container">
             <div class="row">
                 <%for(var i = 0; i < 6; i++){%>
-                    <div class="col-md-4">
+                    <div class="col-md-4 column">
                         <a class="mod-img-wrapper" href=""><img class="img" src="../img/index/case-<%=i+1%>.jpg" alt=""></a>
                     </div>
                     <%}%>
@@ -255,18 +255,24 @@
             <li class="step-5">网站、商城测试</li>
             <li class="step-6">售后服务</li>
         </ol>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div class="ul">
+            <div class="li"></div>
+            <div class="li"></div>
+            <div class="li"></div>
+            <div class="li"></div>
+            <div class="li"></div>
+            <div class="li"></div>
+            <div class="li"></div>
+        </div>
     </section>
 
     <section id="shopping-case" class="shopping-case">
+        <div class="mod-title__wrapper">
+            <h2 class="mod-title">
+                商城案例
+                <span>shopping case</span>
+            </h2>
+        </div>
         <div id="myCarousel" class="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" class="active" data-slide-to="0"></li>
@@ -275,20 +281,32 @@
 
                 <div class="item active">
                     <div class="container">
-                        <div class="col-md-2"><img class="lazy" data-src="../img/index/shopping-1.png" src="" alt=""></div>
-                        <div class="col-md-2"><img class="lazy" data-src="../img/index/shopping-2.png" src="" alt=""></div>
-                        <div class="col-md-2"><img class="lazy" data-src="../img/index/shopping-3.png" src="" alt=""></div>
-                        <div class="col-md-2"><img class="lazy" data-src="../img/index/shopping-4.png" src="" alt=""></div>
-                        <div class="col-md-2"><img class="lazy" data-src="../img/index/shopping-5.png" src="" alt=""></div>
-                        <div class="col-md-2"><img class="lazy" data-src="../img/index/shopping-6.png" src="" alt=""></div>
+                        <div class="col-sm-6 col-md-2">
+                            <img class="lazy" data-src="../img/index/shopping-1.png" src="" alt="">
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <img class="lazy" data-src="../img/index/shopping-2.png" src="" alt="">
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <img class="lazy" data-src="../img/index/shopping-3.png" src="" alt="">
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <img class="lazy" data-src="../img/index/shopping-4.png" src="" alt="">
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <img class="lazy" data-src="../img/index/shopping-5.png" src="" alt="">
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                            <img class="lazy" data-src="../img/index/shopping-6.png" src="" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
             <a href="#myCarousel" data-slide="prev" class="carousel-control left">
-                <span class=""></span>
+                <span class="icon glyphicon-chevron-left icon-arrow-left"></span>
             </a>
             <a href="#myCarousel" data-slide="next" class="carousel-control right">
-                <span class=""></span>
+                <span class="icon glyphicon-chevron-right icon-arrow-right"></span>
             </a>
         </div>
     </section>

@@ -8,8 +8,13 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Meghna One page parallax responsive HTML Template ">
-
+    <meta name="description" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!-- 禁止百度转码显示 -->
+    <meta name="applicable-device" content="mobile">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
     <meta name="author" content="Cest">
 
     <title>晨辉网络科技</title>
@@ -32,8 +37,16 @@
 
     <!-- Modernizer Script for old Browsers -->
     <script src="/lib/modernizr-2.6.2.min.js"></script>
-</head>
 
+    <!--[if gt IE 9]><!-->
+        <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+        <script type="text/javascript">
+            new WOW().init();
+        </script>
+    <!--<![endif]-->
+</head>
+<!--[if gte IE 9]><!-->
 <body id="body">
     <!--
 	Start Preloader
@@ -121,14 +134,14 @@
 
     <section id="services">
         <div class="mod-title__wrapper">
-            <h2 class="mod-title">
+            <h2 class="mod-title wow fadeIn animated" data-wow-duration="1500ms">
                 服务内容
                 <span>Services</span>
             </h2>
         </div>
         <div class="container">
             <ul class="row">
-                <li class="col-md-4 column">
+                <li class="col-md-4 column wow fadeInUp animated" data-wow-duration="500ms">
                     <div class="img__wrapper">
                         <img src="../img/index/fwnr-1.png" alt="">
                     </div>
@@ -136,7 +149,7 @@
                         <p>微商城、企业官网、政府站、手机站、微网站、视频站、网站推广等</p>
                     </div>
                 </li>
-                <li class="col-md-4 column">
+                <li class="col-md-4 column wow fadeInUp animated" data-wow-delay="500ms" data-wow-delay="250ms">
                     <div class="img__wrapper">
                         <img src="../img/index/fwnr-2.png" alt="">
                     </div>
@@ -144,7 +157,7 @@
                         <p>商城订单、购物、信息记录、信息统计、业务流程、人员管理、触屏系统、其他定制软件</p>
                     </div>
                 </li>
-                <li class="col-md-4 column">
+                <li class="col-md-4 column wow fadeInUp animated" data-wow-delay="500ms" data-wow-delay="500ms">
                     <div class="img__wrapper">
                         <img src="../img/index/fwnr-3.png" alt="">
                     </div>
@@ -166,7 +179,7 @@
 
     <section id="our-team">
         <div class="mod-title__wrapper">
-            <h2 class="mod-title">
+            <h2 class="mod-title wow fadeIn animated" data-wow-duration="1500ms">
                 我们的优势
                 <span> whyOUR ADVANTAGES</span>
             </h2>
@@ -174,19 +187,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="why__wrapper why-1">
+                    <div class="why__wrapper why-1 wow fadeInUp animated" data-wow-duration="500ms">
                         <dl class="">
                             <dt>十年专业  定制开发</dt>
                             <dd>10年行业经验，专注于企业官网，政府网站，商城平台，信息化平台建设，几百个成功案例</dd>
                         </dl>
                     </div>
-                    <div class="why__wrapper why-2">
+                    <div class="why__wrapper why-2 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="400ms">
                         <dl class="">
                             <dt>技术规范  平稳运营</dt>
                             <dd>标注、规范的代码，有效防止数据注入，服务器多层安全设置，保障站点正常运转</dd>
                         </dl>
                     </div>
-                    <div class="why__wrapper why-3">
+                    <div class="why__wrapper why-3 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="800ms">
                         <dl class="">
                             <dt>扩展性强  省心省力</dt>
                             <dd>强大的技术团队可满足您的特殊定制需求，后期维护无需担心，修改、迁移、扩展、升级全可实现</dd>
@@ -194,19 +207,19 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="why__wrapper why-4">
+                    <div class="why__wrapper why-4 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="200ms">
                         <dl class="">
                             <dt>自主平台  实力保障</dt>
                             <dd>10年行业经验，专注于企业官网，政府网站，商城平台，信息化平台建设，几百个成功案例</dd>
                         </dl>
                     </div>
-                    <div class="why__wrapper why-5">
+                    <div class="why__wrapper why-5 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
                         <dl class="">
                             <dt>快速响应  全程无忧</dt>
                             <dd>拥有专业的技术知识，才能提供强有力的服务，彻底摆脱传统模板建站无维护的尴尬局面</dd>
                         </dl>
                     </div>
-                    <div class="why__wrapper why-6">
+                    <div class="why__wrapper why-6 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="1000ms">
                         <dl class="">
                             <dt>虔诚服务  满意至上</dt>
                             <dd>及时、有效的服务，让客户无忧，专业的解决方案，使客户业绩倍增，客户的肯定使我们追求卓越的动力</dd>
@@ -227,7 +240,7 @@
 
     <section id="showcase">
         <div class="mod-title__wrapper">
-            <h2 class="mod-title">
+            <h2 class="mod-title wow fadeIn animated" data-wow-duration="1500ms">
                 案例展示
                 <span> show case</span>
             </h2>
@@ -235,10 +248,10 @@
         <div class="container">
             <div class="row">
                 <%for(var i = 0; i < 6; i++){%>
-                    <div class="col-md-4 column">
-                        <a class="mod-img-wrapper" href=""><img class="img" src="../img/index/case-<%=i+1%>.jpg" alt=""></a>
-                    </div>
-                    <%}%>
+                <div class="col-md-4 column wow fadeIn animated" data-wow-duration="500ms" data-wow-delay="<%=i*200%>ms">
+                    <a class="mod-img-wrapper" href="javascript:;"><img class="img" src="../img/index/case-<%=i+1%>.jpg" alt=""></a>
+                </div>
+                <%}%>
             </div>
         </div>
     </section>
@@ -248,12 +261,12 @@
 
         </div>
         <ol class="steps">
-            <li class="step-1">意向洽谈</li>
-            <li class="step-2">签订合同</li>
-            <li class="step-3">完成初稿确认</li>
-            <li class="step-4">网站、商城验收</li>
-            <li class="step-5">网站、商城测试</li>
-            <li class="step-6">售后服务</li>
+            <li class="step-1 column wow fadeIn animated" data-wow-duration="500ms" data-wow-delay="0ms">意向洽谈</li>
+            <li class="step-2 column wow fadeIn animated" data-wow-duration="500ms" data-wow-delay="200ms">签订合同</li>
+            <li class="step-3 column wow fadeIn animated" data-wow-duration="500ms" data-wow-delay="400ms">完成初稿确认</li>
+            <li class="step-4 column wow fadeIn animated" data-wow-duration="500ms" data-wow-delay="600ms">网站、商城验收</li>
+            <li class="step-5 column wow fadeIn animated" data-wow-duration="500ms" data-wow-delay="800ms">网站、商城测试</li>
+            <li class="step-6 column wow fadeIn animated" data-wow-duration="500ms" data-wow-delay="1000ms">售后服务</li>
         </ol>
         <div class="ul">
             <div class="li"></div>
@@ -268,7 +281,7 @@
 
     <section id="shopping-case" class="shopping-case">
         <div class="mod-title__wrapper">
-            <h2 class="mod-title">
+            <h2 class="mod-title wow fadeIn animated" data-wow-duration="1500ms">
                 商城案例
                 <span>shopping case</span>
             </h2>
@@ -325,12 +338,12 @@
                 <div class="row">
                     <div class="col-md-7">
                         <div class="mod-title__wrapper">
-                            <h2 class="mod-title">
+                            <h2 class="mod-title wow fadeIn animated" data-wow-duration="1500ms">
                                 关于我们
                                 <span>About</span>
                             </h2>
                         </div>
-                        <div class="text__wrapper">
+                        <div class="text__wrapper wow fadeInLeft animated" data-wow-duration="1000ms" data-wow-delay="200ms">
                             <p class="text">柳州市晨辉网络科技有限公司是一家专注于公众号商城平台、综合网站平台、企业建站、政府建站的柳州本土网络公司，位于柳南区航生路6号万达华城。</p>
                             <p class="text">我们的团队多年服务于柳州各大上市公司、政府重要职能部门，拥有扎实的技术基础，在能满足客户各种定制需求的同时，能使站点通过公安部门日益紧抓的网络安全扫描，确保网站不因代码漏洞、服务器漏洞等安全问题而被关停。</p>
                             <p class="text">自有建站平台，能在满足一般建站需求的同时，提供良好的扩展性、维护性、可移植性，避免因企业、政府部门业务扩大，导致网站跟不上发展需要而重新建站。而我们的优势体现在：价格低廉，售后维护有保障，可满足二次开发，及时配合客户完成安全检查。</p>
@@ -339,11 +352,11 @@
                     </div>
                     <div class="col-md-5 right">
                         <ul>
-                            <li>
+                            <li class="wow fadeInRight animated" data-wow-duration="1000ms" data-wow-delay="400ms">
                                 <i class="icon icon-dz"></i>柳南区航生路6号万达华城1栋10-5、6号</li>
-                            <li>
+                            <li class="wow fadeInRight animated" data-wow-duration="1000ms" data-wow-delay="600ms">
                                 <i class="icon icon-dh"></i>18178293807(廖)&nbsp;&nbsp;&nbsp; 18666076510(彭) </li>
-                            <li>
+                            <li class="wow fadeInRight animated" data-wow-duration="1000ms" data-wow-delay="800ms">
                                 <i class="icon icon-yx"></i>mail@lzchenhui.com</li>
                         </ul>
                     </div>
@@ -351,7 +364,7 @@
             </div>
         </div>
         <div class="img__wrapper">
-            <img src="../img/index/map.jpg" alt="地址">
+            <img src="../img/index/map.jpg" alt="公司地址:柳南区航生路6号万达华城1栋10-5、6号" title="公司地址:柳南区航生路6号万达华城1栋10-5、6号">
         </div>
     </section>
 
@@ -366,7 +379,7 @@
 
     <footer class="footer">
         <div class="text__wrapper">
-            <p>版权所有：柳州市晨辉网络科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://www.lzchenhui.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 备案号：桂ICP备16007709号</p>
+            <p class="wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="400ms">版权所有：柳州市晨辉网络科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; http://www.lzchenhui.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 备案号：桂ICP备16007709号</p>
         </div>
     </footer>
 
@@ -381,5 +394,23 @@
     <!-- index js -->
     <script src="/js/index.js"></script>
 </body>
-
+<!--<![endif]-->
+<!--[if lte IE 8]>   
+<style>
+    body {
+        color: #fff;
+        text-align: center;
+        position: relative;
+    }
+    .container {
+        margin-top: 100px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>您的IE浏览器版本过低</h2>
+        <p>请升级最新浏览器或者用其他非IE内核浏览器打开</p>
+    </div>
+</body>
+<![endif]-->
 </html>

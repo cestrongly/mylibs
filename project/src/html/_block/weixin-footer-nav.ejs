@@ -1,0 +1,22 @@
+<footer class="mod-weixin-footer-nav">
+    <nav>
+        <ul id="mod-weixin-footer-nav__items" class="mod-weixin-footer-nav__items">
+            <%for(var i = 0; i < local.footer_navs.length; i++) {%>
+            <li>
+                <a href="<%=local.footer_navs[i].link_href%>"><span><%=local.footer_navs[i].link_text%></span></a>
+                <%var sub_navs = local.footer_navs[i].sub_navs %>
+                <%if(!!sub_navs){%>
+                    <%if(sub_navs.length > 0){%>
+                <dl>
+                    <%for (var j = 0; j < sub_navs.length; j++){%>
+                    <dd><a href="<%=sub_navs[j].link_href%>"><span><%=sub_navs[j].link_text%></span></a></dd>
+                    <%}%>
+                </dl>
+                    <%}%>
+                <%}%>        
+            </li>
+            <%}%>
+        </ul>
+    </nav>
+    <div id="mod-weixin-footer-nav__masklayer" class="mod-weixin-footer-nav__masklayer">&nbsp;</div>
+</footer>

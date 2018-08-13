@@ -1,0 +1,74 @@
+{
+    "footer_navs": [
+        {
+            "link_href": "javascript:;",
+            "link_text": "一级菜单1",
+            "sub_navs": [
+                {
+                    "link_href": "javascript:;",
+                    "link_text": "电话"
+                },
+                {
+                    "link_href": "javascript:;",
+                    "link_text": "在线QQ"
+                },
+                {
+                    "link_href": "javascript:;",
+                    "link_text": "在线客服"
+                },
+                {
+                    "link_href": "javascript:;",
+                    "link_text": "地址"
+                }
+            ]
+        },
+        {
+            "link_href": "javascript:;",
+            "link_text": "电商",
+            "sub_navs": [
+                {
+                    "link_href": "javascript:;",
+                    "link_text": "微信会员卡"
+                },
+                {
+                    "link_href": "javascript:;",
+                    "link_text": "微社区"
+                },
+                {
+                    "link_href": "javascript:;",
+                    "link_text": "微投票"
+                },
+                {
+                    "link_href": "javascript:;",
+                    "link_text": "微调研"
+                }
+            ]
+        },
+        {
+            "link_href": "javascript:;",
+            "link_text": "网站建设",
+            "sub_navs": [
+                {
+                    "link_href": "javascript:;",
+                    "link_text": "微商城"
+                },
+                {
+                    "link_href": "javascript:;",
+                    "link_text": "微餐饮"
+                },
+                {
+                    "link_href": "javascript:;",
+                    "link_text": "微团购"
+                },
+                {
+                    "link_href": "javascript:;",
+                    "link_text": "微汽车"
+                }
+            ]
+        },
+        {
+            "link_href": "javascript:;",
+            "link_text": "微活动"
+        }
+    ]
+}
